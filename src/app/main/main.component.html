@@ -1,0 +1,56 @@
+<div class="w3-conatiner" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-cell w3-half">
+      <ul class="w3-ul w3-card">
+        <li class="w3-bar" *ngFor="let bank of banks_L">
+          <!-- <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span> -->
+           <img [src]='getBankIcon(bank)' class="w3-bar-item w3-hide-small" style="width:100px">
+          <!-- <span class="w3-bar-item w3-circle w3-hide-small " style="width:85px"><i class='fa fa-home w3-xxlarge'></i></span> -->
+          <div class="w3-bar-item ">
+            <span class="w3-large">{{bank}}</span><br>
+          </div>
+        </li>
+       
+      </ul>
+    </div>
+    <div class="w3-cell w3-half">
+      <ul class="w3-ul w3-card">
+        <li class="w3-bar" *ngFor="let bank of banks_R">
+          <!-- <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span> -->
+           <img [src]='getBankIcon(bank)' class="w3-bar-item w3-circle w3-hide-small" style="width:100px">
+          <!-- <span class="w3-bar-item w3-circle w3-hide-small " style="width:85px"><i class='fa fa-home w3-xxlarge'></i></span> -->
+          <div class="w3-bar-item">
+            <span class="w3-large">{{bank|lowercase}}</span><br>
+          </div>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="w3-container" style="padding:128px 16px" id="main">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
